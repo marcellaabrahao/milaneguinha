@@ -25,7 +25,7 @@ html {
 body {
     font-family: 'Catamaran', sans-serif;   
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; 
 }
 
 // ==========================================================================
@@ -84,8 +84,6 @@ header {
         }
     }    
 }
-
-
 
 // ==========================================================================
 // conteudo interno
@@ -183,13 +181,35 @@ section.conteudo-interno {
             }
         }        
     }
+
+    ul.galeria-oficinas {
+        list-style-type: none;
+        margin-top: 25px;
+        li {
+            float: left;
+            margin:1px;
+            img {
+                width: 100px;
+                height: auto;
+            }
+            
+
+            &:first-child {
+                float:none;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                
+            }
+
+        }
+    }
 }
 
 // ==========================================================================
-// Content
+// HOME
 // ==========================================================================
-#content {}
-
 section.home-saboaria {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -209,6 +229,8 @@ section.home-saboaria {
     }
  
     ul {
+        padding: 0;
+
         li {
             list-style-type: none;
 
